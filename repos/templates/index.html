@@ -1,0 +1,9 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container-fluid">
+	<h1>Usted esta logeado? 🤔</h1>
+	{% if request.user.is_authenticated %}
+	<a href="repos/create">Create a Repo</a>
+	<h2>Usted esta Logeado</h2>
+	{% endif %}
+</div>
+{% endblock content %}
